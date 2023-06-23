@@ -1,0 +1,212 @@
+<!DOCTYPE HTML><html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="15">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Sensor Reading App </title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+      html {
+        font-family: 'Kanit', sans-serif;
+     display: inline-block;
+     margin: 0px auto;
+     text-align: center;
+    }
+    h2 { font-size: 25px; }
+    p { font-size: 3.0rem; }
+    .units { font-size: 1.2rem; }
+    .dht-labels{
+        color: #457B9D;
+        font-weight:800;
+      font-size: 1.5rem;
+      vertical-align:middle;
+      padding-bottom: 15px;
+    }
+ body{
+    font-family: 'Kanit', sans-serif;
+     background-color: #A8DADC; 
+     /* background-color: white; */
+    font-family: 'Secular One', sans-serif;
+ }
+ .heading{
+    font-family: 'Kanit', sans-serif;
+    background-color:#1D3557;
+    width:100%;
+    padding: 12px;
+    height: auto;
+    text-align:center;
+    color: rgb(241, 238, 238);  }
+.buts{
+padding-left: 10px;
+font-size:20px;
+color:white; }
+.head{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    /* line-height: 10px; */
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.card{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 15px;
+    background-color: #F1FAEE;
+    box-shadow: 2px 2px 12px 1px rgb(140 140 140 / 50%);
+    text-align: center;
+    margin-bottom: 13px;}
+#temperature{
+    font-size: 40px;
+    /* line-height: 10px; */
+    letter-spacing: 2px;
+    font-weight: bolder;
+	color: #E63946;
+}
+.tables{
+    background-color: #F1FAEE;
+padding:200px;
+width: 100%;
+text-align: center;
+}
+
+  </style>
+</head>
+<body>
+     <div class="heading">
+
+         <p class="head"> <img src="./logobg.png"  width="80px" height="80px">  Water Quality Monitoring System </p>
+        <!-- <p class="head">Sensor Reading App <i class="fas fa-clipboard-list"></i></p> -->
+     </div> 
+    <br>
+	<div class= "buts">
+	<button type="button" class="btn btn-warning">Generate Report </button>
+<button type="button" class="btn btn-warning">Reload</button>
+	</div>
+     <br>
+     <h4 style="text-align: center; color: #E63946; font-size:xx-large;"  >Realtime Data Display from Level 2 </h4> 
+<br>
+  <br>
+  <div class="container">
+   
+    <div class=" rowing row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col">
+      <div class="card">
+        <p>
+            <i class="fas fa-thermometer-half" style="color:#1D3557;"></i> 
+            <span class="dht-labels">pH Value </span> 
+            
+          </p>
+		  <p id="temperature" >
+6.17          </p>
+		  
+        </div>
+      </div>
+	    <div class="col">
+      <div class="card">
+        <p>
+            <i class="fas fa-thermometer-half" style="color:#1D3557;"></i> 
+            <span class="dht-labels">EC Value  </span> 
+            
+          </p>
+		  <p id="temperature" >
+325          </p>
+		  
+        </div>
+      </div>
+	    <div class="col">
+      <div class="card">
+        <p>
+            <i class="fas fa-thermometer-half" style="color:#1D3557;"></i> 
+            <span class="dht-labels">Temp Value </span> 
+            
+          </p>
+		  <p id="temperature" >
+324          </p>
+		  
+        </div>
+      </div>
+	    <div class="col">
+      <div class="card">
+        <p>
+            <i class="fas fa-thermometer-half" style="color:#1D3557;"></i> 
+            <span class="dht-labels">Tbd Value</span> 
+            
+          </p>
+		  <p id="temperature" >
+328          </p>
+		  
+        </div>
+      </div>
+	   
+      
+    </div>
+	<br>
+	<br>
+	 <h4 style="text-align: center; color: #E63946;"  >Water Quality Monitoring as per Indian Standard : </h4>
+	<br>
+	<section >
+<table class="tables table-bordered">
+  <thead>
+    <tr class="table-succxess" style="color: #457B9D;">
+      <th scope="col">#</th>
+      <th scope="col">Parameters</th>
+      <th scope="col">Value </th>
+      <th scope="col">Remark</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Turbidity </td>
+      <td>
+328	  </td>
+      <td>
+semi-clear	  </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>pH </td>
+      <td>
+6	  </td>
+      <td>
+Acidic	  </td>
+    </tr>
+	  <tr>
+      <th scope="row">3</th>
+      <td>Temperature </td>
+      <td>
+324	  </td>
+      <td>
+data loading 	  </td>
+    </tr>
+	  <tr>
+      <th scope="row">4</th>
+      <td>Electrical Conductivity </td>
+      <td>
+325	  </td>
+      <td>
+Bad	  </td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td colspan="2">Water Class </td>
+      <td>
+A	  </td>
+    </tr>
+  </tbody>
+</table>
+</section>
+  </div>
+  <br>
+
+
+
+</body>
+
+</html>
